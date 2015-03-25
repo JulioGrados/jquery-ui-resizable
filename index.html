@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase</title>
+	<link rel="stylesheet" type="text/css" href="css/theme/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/theme/miEstilo.css">
+</head>
+<body>
+	<div id="resize_me">
+		<h2>Titulo Resizable</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere culpa quod nulla dolorem labore, doloribus illum veniam perferendis, natus ex. Beatae hic maiores unde fugit vel sit tempora deserunt quia.
+	</div>
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+
+	<script>
+		$("#resize_me").resizable({
+			animate: true,
+			helper: "ui-resizable-helper",
+			minWidth: 300,
+			minHeight: 300
+		});
+	</script>
+</body>
+</html>
